@@ -10,15 +10,11 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/NikahPath/',
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
-
-      export default defineConfig({
-  base: '/NikahPath/',
-  // ... rest of your config
-})
     },
   },
 });
